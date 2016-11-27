@@ -59,17 +59,67 @@ p {
  * 全局
  */
 
+body {
+    --themeColor: #ee6e73;/*全局主题颜色*/
+}
+
 #container {
     max-width: 1000px;
     margin: 0 auto;
     margin-top: 80px;
-    background: red;
-    height: 100px;
+    height: 100%;
 }
 
 /*
  * 头部
  */
+#header {
+    height: 500px;
+    width: 100%;
+    border: dashed var(--themeColor) 1px;
+    padding: 2px;
+}
+
+.header_bg {
+    width: 100%;
+    height: 100%;
+    background-image: url("../images/header_background_images.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: bottom;
+}
+
+.header_author_images {
+    text-align: center;
+}
+
+.header_author_images img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    border: 3px solid rgba(255,255,255,.3);
+    transition: width 1s,height 1s;
+    -moz-transition: width 1s,height 1s,-moz-transform 1s;
+    -webkit-transition: width 1s,height 1s,-webkit-transform 1s;
+    -o-transition: width 1s,height 1s,-o-transform 1s;
+}
+
+.header_author_images img:hover {
+    transform: rotate(360deg);
+    -moz-transform: rotate(360deg);
+    -webkit-transform: rotate(360deg);
+    -o-transform: rotate(360deg);
+}
+
+.header_author_info {
+    text-align: center;
+    height: 70px;
+}
+
+.header_author_info p {
+    font-size: 24px;
+    padding: 20px;
+}
 
 
 /*
