@@ -8,3 +8,74 @@ License: GNU General Public License v2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 Version: 1.0
 */
+
+/*
+ * 初始化
+ */
+body, ol, ul, h1, h2, h3, h4, h5, h6, p, th, td, dl, dd, form, fieldset, legend, input, textarea, select {
+    margin: 0;
+    padding: 0
+}
+
+body {
+    font: 12px "Trebuchet MS", Helvetica, Arial, 'PingFang SC', 'Hiragino Sans GB', 'STHeiti Light', 'Microsoft YaHei', SimHei, 'WenQuanYi Micro Hei', sans-serif;
+    background: #fff;
+    -webkit-text-size-adjust: 100%;
+}
+
+a {
+    color: #000;
+    text-decoration: none
+}
+
+a:hover {
+    color: #000;
+    text-decoration: underline
+}
+
+em {
+    font-style: normal
+}
+
+li {
+    list-style: none
+}
+
+img {
+    border: 0;
+    vertical-align: middle
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0
+}
+
+p {
+    word-wrap: break-word
+}
+
+/*
+ * 全局
+ */
+
+#container {
+    max-width: 1000px;
+    margin: 0 auto;
+    margin-top: 80px;
+    background: red;
+    height: 100px;
+}
+
+/*
+ * 头部
+ */
+
+
+/*
+ * 主体
+ */
+
+/*
+ * 脚部
+ */
