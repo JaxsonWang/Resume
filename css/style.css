@@ -437,3 +437,38 @@ skills_certificate_one_open {
         margin-top: 110px;
     }
 }
+
+.header_author_apply_content.del {
+    text-decoration: underline line-through overline;
+}
+
+/*回到顶部按钮*/
+.back2top {
+    z-index: 99;
+    background: #007200;
+    width: 36px;
+    height: 36px;
+    display: block;
+    position: fixed;
+    right: 60px;
+    bottom: 60px;
+    cursor: pointer;
+    border-radius: 50%;
+    -webkit-animation: cont .5s;
+    -o-animation: cont .5s;
+    animation: cont .5s;
+}
+.back2top:before {
+    content: "";
+    position: absolute;
+    right: 8px;
+    top: 10px;
+    border-left: 10px solid transparent;
+    border-right: 10px solid transparent;
+    border-bottom: 15px solid #fff
+}
+.back2top:hover {
+    -webkit-animation: btn-pudding 2s linear;
+    -o-animation: btn-pudding 2s linear;
+    animation: btn-pudding 2s linear
+}
