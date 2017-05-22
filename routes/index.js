@@ -6,8 +6,16 @@ var config = require('../model/config');
 // 使用连接池，提升性能
 var pool = mysql.createPool(config.mysql);
 /* GET home page. */
-router.get('/', function(req, res, next) {
-  res.render('index', { title: 'Express' });
+router.get('/', function (req, res, next) {
+    var sess = req.session;
+    var loginUser = sess.username;
+    console.log("首页测试：" + loginUser);
+    var isLogined = !!isLogined;
+    res.render('index', {
+        title: 'Express',
+        isLogined: isLogined,
+        name: loginUser
+    });
 });
 
 module.exports = router;

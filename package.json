@@ -10,6 +10,8 @@
     "cookie-parser": "~1.4.3",
     "debug": "^2.6.8",
     "express": "^4.15.3",
+    "express-session": "^1.15.3",
+    "session-file-store": "^1.0.0",
     "jade": "~1.11.0",
     "morgan": "^1.8.1",
     "mysql": "^2.12.0",
