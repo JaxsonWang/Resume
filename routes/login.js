@@ -19,7 +19,7 @@ router.post('/userLogin', function (req, res, next) {
         var $sql = "select * from users where username=?";
         connection.query($sql, [username], function (err, result) {
             var resultJson = result;
-            console.log(resultJson.length);
+            //console.log(resultJson.length);
             if (resultJson.length === 0) {
                 result = {
                     code: 300,
@@ -28,8 +28,8 @@ router.post('/userLogin', function (req, res, next) {
                 res.json(result);
                 connection.release();
             } else {  //账号存在，可以登录，进行密码判断
-                var $sql1 = "select password from users where username=?";
-                connection.query($sql1, [username], function (err, result) {
+                var $sql = "select password from users where username=?";
+                connection.query($sql, [username], function (err, result) {
                     var temp = result[0].password;  //取得数据库查询字段值
                     if (temp === password) {
                         result = {
