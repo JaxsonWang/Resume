@@ -31,15 +31,12 @@ router.post('/userLogin', function (req, res, next) {
                 var $sql1 = "select password from users where username=?";
                 connection.query($sql1, [username], function (err, result) {
                     var temp = result[0].password;  //取得数据库查询字段值
-                    console.log(temp);
                     if (temp === password) {
                         result = {
                             code: 200,
                             msg: '密码正确'
                         };
-                        sess.username = "王瑾";
-                        console.log('这里是：' + JSON.stringify(sess));
-                        console.log('获取username' + sess.username);
+                        sess.username = [username];//存入session中
                     } else {
                         result = {
                             code: 400,

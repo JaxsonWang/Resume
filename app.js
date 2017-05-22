@@ -11,6 +11,7 @@ var index = require('./routes/index');
 var users = require('./routes/users');
 var login = require('./routes/login');
 var register = require('./routes/register');
+var logout = require('./routes/logout');
 
 var app = express();
 
@@ -30,12 +31,12 @@ app.use(express.static(path.join(__dirname, 'public')));
 //设置session
 app.use(session({
     name: identityKey,
-    store: new FileStore(),
-    saveUninitialized: false,
-    resave: false,
-    secret: '1234567890',
+    store: new FileStore(), //本地存储session（文本文件，也可以选择其他store，比如redis的）
+    saveUninitialized: false, //是否自动保存未初始化的会话，建议false
+    resave: false, //是否每次都重新保存会话，建议false
+    secret: '1234567890', //用来对session id相关的cookie进行签名，建议使用 128 个字符的随机字符串
     cookie: {
-        maxAge: 60 * 1000  // 有效期，单位是毫秒
+        maxAge: 60 * 1000  //有效期，单位是毫秒,实例会话有效期1分钟
     }
 }));
 
@@ -43,6 +44,7 @@ app.use('/', index);
 app.use('/users', users);
 app.use('/login', login);
 app.use('/register', register);
+app.use('/logout',logout);
 
 // catch 404 and forward to error handler
 app.use(function (req, res, next) {

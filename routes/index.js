@@ -9,12 +9,11 @@ var pool = mysql.createPool(config.mysql);
 router.get('/', function (req, res, next) {
     var sess = req.session;
     var loginUser = sess.username;
-    console.log("首页测试：" + loginUser);
     var isLogined = !!isLogined;
     res.render('index', {
         title: 'Express',
         isLogined: isLogined,
-        name: loginUser
+        name: loginUser || '游客'
     });
 });
 
