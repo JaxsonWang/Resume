@@ -1,50 +1,19 @@
-# Resume
-Just A HTML5 Resume
+# express-demo
+基于node.js的express框架+jade+bootstrap+mysql开发的用户注册登录项目
 
-这仅仅是一个HTML5个人简历
+### 项目运行：
 
-## Online Demo - 在线展示
+```
+ 先搭建好mysql数据库环境（可参考项目说明）
+ 用cmd命令行进入到项目根目录，然后依次输入:
+ npm install
+ npm start
+ 在浏览器输入:localhost:3000/login
+```
 
-Have a look at [https://Jaxson.Wang](https://Jaxson.Wang)
+### 说明
 
-## Description - 说明
+如何取判断用户是否在线呢？
 
-This is a static personal HTML5 resume. It will bring you more luck!
+如何在前端显示游客可见性的数据？
 
-这是一个静态个人HTML5简历。它会给你带来更多的幸运！
-
-## Usage - 使用
-
-Please download using！Thank you！
-
-请直接下载！
-
-## Development - 开发
-
-No plans
-
-暂无计划
-
-## Todo list - 计划
- - [ ]  Static Page (HTML5 & CSS3) Construction
- - [ ]  Later Node.js/PHP Builds Deployment
- - [ ]  Change Themes
- - [ ]  Support Printing
- - [ ]  More...
- 
-## LICENSE - 许可
-
-MIT @[JaxsonWang](https://github.com/JaxsonWang)
-
-## Donation
-
-Alipay:
-
-![](https://img.alicdn.com/imgextra/i2/2038135983/TB2Y.gTXY1J.eBjSszcXXbFzVXa_!!2038135983.png)
-
-Wechat:
-
-![](https://img.alicdn.com/imgextra/i3/2038135983/TB2MmO1ahaK.eBjSZFwXXXjsFXa_!!2038135983.png)
-
-
-Thanks!

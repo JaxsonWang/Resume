@@ -1,0 +1,52 @@
+<!DOCTYPE html><html><head><title></title><link rel="stylesheet" href="/stylesheets/style.css"><link rel="stylesheet" href="/bootstrap-3.3.7-dist/css/bootstrap.min.css"><script src="/javascripts/jquery-3.1.1.min.js"></script><script src="/bootstrap-3.3.7-dist/js/bootstrap.min.js"></script></head><body style="background: #dcd9da"><!-- h1= title--><div class="container"><div class="row"><div class="col-md-4 col-md-offset-4"><div style="margin-top: 100px" class="panel panel-default"><div style="background: #0d6aad" class="panel-heading"><h4 align="center" style="color: #ffffff;">express-jade-bootstrap-mysql-demo</h4></div><div style="background: #e0e1ea" class="panel-body"><div class="form-group"><div class="input-group"><span class="input-group-addon">&#x8D26;&#x53F7;</span><input id="username" type="text" placeholder="请输入账号" class="form-control"></div></div><div class="form-group"><div class="input-group"><span class="input-group-addon">&#x5BC6;&#x7801;</span><input id="password" type="password" placeholder="请输入密码" class="form-control"></div></div><div class="form-group"><div class="col-lg-offset-7">&#x6CA1;&#x6709;&#x8D26;&#x53F7;&#xFF1F;<a href="/register">&#x6CE8;&#x518C;</a></div></div><div class="form-group"><button id="login" type="button" class="btn btn-success btn-block">&#x767B;&#x5F55;</button></div><div id="popup" class="alert alert-warning"><a id="close" href="#" class="close">&times;</a><div align="center"><strong id="popup-content" style="color: #b12e30;"></strong></div></div></div></div></div></div></div><script type="text/javascript">$(document).ready(function () {
+  var username = $("#username");
+  var password = $("#password");
+  var login = $("#login");
+  var popup = $("#popup");
+  var popupContent = $("#popup-content");
+  var close = $("#close");
+  popup.hide();
+  close.click(function () {
+    popup.hide();
+  });
+  login.click(function () {
+    if (username.val() == "" || password.val() == "") {
+      popup.show();
+      popupContent.html("账号或密码不能为空！");
+    } else {
+      $.ajax({
+                url: "/login/userLogin",
+                data: {
+                  username: $("#username").val(),
+                  password: $("#password").val()
+                },
+                type: "POST",
+                timeout: 36000,
+                dataType: "text",
+                success: function (data, textStatus) {
+                  console.log(data);
+                  var dataJson = eval("(" + data + ")");
+                  if (dataJson.code == 200) {
+                    alert("登录成功");
+                    window.location.href = "/";
+                  } else if (dataJson.code == 300) {
+                    popup.show();
+                    popupContent.html("账号不存在，请重新输入！");
+                  } else if (dataJson.code == 400) {
+                    popup.show();
+                    popupContent.html("密码有误，请重新输入！");
+                  } else {
+                    popup.show();
+                    popupContent.html("登录出错！");
+                  }
+                },
+                error: function (XMLHttpRequest, textStatus, errorThrown) {
+                  alert("error:" + textStatus);
+                }
+              }
+      );
+    }
+  })
+  ;
+})
+;</script></body></html>
