@@ -1,0 +1,8 @@
+extends layout
+
+block content
+    h1= title
+    p Welcome to #{title}
+    if isLogined == isLogined
+        h3 #{name}
+        a(href="logout")#logout 注销

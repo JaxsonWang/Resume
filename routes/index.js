@@ -17,4 +17,18 @@ router.get('/', function (req, res, next) {
     });
 });
 
+router.get('/resume',function (req, res, next) {
+    //数据库查询
+    pool.getConnection(function (err, connection) {
+        //先判断该账号是否存在
+        var $sql = "SELECT * FROM users WHERE username=?";
+        connection.query($sql, "Jaxson", function (err, result) {
+            var resultJson = result;
+            console.log(resultJson);
+            res.json(resultJson);
+            connection.release();
+        });
+    });
+});
+
 module.exports = router;
