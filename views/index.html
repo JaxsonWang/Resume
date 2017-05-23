@@ -1,11 +1,11 @@
-<!DOCTYPE html><html><head><title></title><link rel="stylesheet" href="/stylesheets/style.css"><script type="text/javascript" src="/javascripts/jquery-3.1.1.min.js"></script></head><body><h1></h1><p>Welcome to </p><h3></h3><a href="logout" id="logout">注销</a><div id="ad">看看</div><script type="text/javascript">$.ajax({
+<!DOCTYPE html><html><head><title></title><link rel="stylesheet" href="/stylesheets/style.css"><script type="text/javascript" src="/javascripts/jquery-3.1.1.min.js"></script></head><body><h1></h1><p>Welcome to </p><h3></h3><a href="logout" id="logout">注销</a><div id="out"></div><script type="text/javascript">$.ajax({
     url: '/resume',
     type: 'get',
     timeout: 36000,
     dataType: "json",
     success: function (data, textStatus) {
         //alert(data[0].name);
-        $('#ad').html(data[0].name);
+        $('#out').html(data[0].name);
     },
     error: function (XMLHttpRequest, textStatus, errorThrown) {
         alert("error:" + textStatus);
