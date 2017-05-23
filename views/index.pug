@@ -6,3 +6,18 @@ block content
     if isLogined == isLogined
         h3 #{name}
         a(href="logout")#logout 注销
+        div#ad 看看
+        script(type="text/javascript").
+            $.ajax({
+                url: '/resume',
+                type: 'get',
+                timeout: 36000,
+                dataType: "json",
+                success: function (data, textStatus) {
+                    //alert(data[0].name);
+                    $('#ad').html(data[0].name);
+                },
+                error: function (XMLHttpRequest, textStatus, errorThrown) {
+                    alert("error:" + textStatus);
+                }
+            })
