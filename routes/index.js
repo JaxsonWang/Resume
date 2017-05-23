@@ -8,7 +8,7 @@ var pool = mysql.createPool(config.mysql);
 /* GET home page. */
 router.get('/', function (req, res, next) {
     var sess = req.session;
-    var loginUser = sess.username;
+    var loginUser = sess.name;
     var isLogined = !!isLogined;
     res.render('index', {
         title: 'Express',
