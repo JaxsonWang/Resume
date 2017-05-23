@@ -17,7 +17,7 @@ router.get('/', function (req, res, next) {
     });
 });
 
-router.get('/resume',function (req, res, next) {
+router.get('/resumeInfo',function (req, res, next) {
     //数据库查询
     pool.getConnection(function (err, connection) {
         //先判断该账号是否存在
