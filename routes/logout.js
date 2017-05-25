@@ -6,7 +6,7 @@ var identityKey = 'iiong';
 /* GET logout page. */
 router.get('/', function (req, res, next) {
     req.session.destroy(function (err) {
-        if(err){
+        if (err) {
             res.json({ret_code: 2, ret_msg: '退出登录失败'});
             return;
         }

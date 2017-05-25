@@ -44,8 +44,8 @@ app.use('/', index);
 app.use('/users', users);
 app.use('/login', login);
 app.use('/register', register);
-app.use('/logout',logout);
-app.use('/admin',admin);
+app.use('/logout', logout);
+app.use('/admin', admin);
 
 // 捕获异常，并且转发404错误
 app.use(function (req, res, next) {
