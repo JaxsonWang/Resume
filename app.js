@@ -30,7 +30,7 @@ app.use(cookieParser());
 app.use(express.static(path.join(__dirname, 'public')));
 //设置session
 app.use(session({
-    name: identityKey,
+    name: identityKey, //在response中sessionID这个cookie的名称。也可以通过这个name读取，默认是connect.sid
     store: new FileStore(), //本地存储session（文本文件，也可以选择其他store，比如redis的）
     saveUninitialized: false, //是否自动保存未初始化的会话，建议false
     resave: false, //是否每次都重新保存会话，建议false
