@@ -17,7 +17,7 @@ router.post('/admin/example', function (req, res, next) {
     var example_1 = req.body.example_1;
     var sess = req.session;
     pool.getConnection(function (err, connection) {
-        var updateSql = "";
+        var updateSql = "INSERT INTO userinfo(userid,gravatar,area,phoneNum,email) VALUES(0,?,?,?,?)";
         connection.query(updateSql, "Jaxson", function (err, result) {
             var resultJson = result;
             console.log(resultJson);
