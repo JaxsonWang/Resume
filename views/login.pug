@@ -48,7 +48,7 @@ html
                     popup.hide();
                 });
                 login.click(function () {
-                    if (username.val() == "" || password.val() == "") {
+                    if (username.val() === "" || password.val() === "") {
                         popup.show();
                         popupContent.html("账号或密码不能为空！");
                     } else {
@@ -64,13 +64,13 @@ html
                                 success: function (data, textStatus) {
                                     console.log(data);
                                     var dataJson = eval("(" + data + ")");
-                                    if (dataJson.code == 200) {
+                                    if (dataJson.code === 200) {
                                         alert("登录成功");
                                         window.location.href = "/";
-                                    } else if (dataJson.code == 300) {
+                                    } else if (dataJson.code === 300) {
                                         popup.show();
                                         popupContent.html("账号不存在，请重新输入！");
-                                    } else if (dataJson.code == 400) {
+                                    } else if (dataJson.code === 400) {
                                         popup.show();
                                         popupContent.html("密码有误，请重新输入！");
                                     } else {

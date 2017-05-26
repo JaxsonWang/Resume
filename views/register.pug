@@ -60,10 +60,10 @@ html
                     popup.hide();
                 });
                 register.click(function () {
-                    if (username.val() == "" || password.val() == "" || password1.val() == "" || name.val() == "") {
+                    if (username.val() === "" || password.val() === "" || password1.val() === "" || name.val() === "") {
                         popup.show();
                         popupContent.html("注册信息不能为空！");
-                    } else if (password.val() !== password1.val()) {
+                    } else if (password.val() !=== password1.val()) {
                         popup.show();
                         popupContent.html("两次输入的密码不一样！");
                     } else {
@@ -80,13 +80,13 @@ html
                             dataType: "text",
                             success: function (data, textStatus) {
                                 var dataJson = eval("(" + data + ")");
-                                if (dataJson.code == 200) {
+                                if (dataJson.code === 200) {
                                     alert("注册成功");
                                     window.location.href = "/login";
-                                } else if (dataJson.code == 300) {
+                                } else if (dataJson.code === 300) {
                                     popup.show();
                                     popupContent.html("该账号已存在！");
-                                } else if (dataJson.code == 400) {
+                                } else if (dataJson.code === 400) {
                                     popup.show();
                                     popupContent.html("注册失败，请重新注册！");
                                 } else {
