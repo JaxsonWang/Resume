@@ -1,0 +1,10 @@
+# Created by .ignore support plugin (hsz.mobi)
+.DS_Store
+.gitignore
+.idea/
+WebPublic/test/
+node_modules/
+sessions/
+views/admin.html
+views/login.html
+views/register.html
