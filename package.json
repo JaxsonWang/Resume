@@ -1,20 +1,43 @@
 {
-  "name": "express-demo",
-  "version": "0.0.0",
-  "private": true,
+  "name": "Resume",
+  "version": "1.0.0",
+  "description": "A resume generator",
   "scripts": {
-    "start": "node ./bin/www"
+    "start": "gulp",
+    "build": "NODE_ENV=production gulp",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "https",
+    "url": "https://github.com/JaxsonWang/Resume.git"
   },
   "dependencies": {
-    "body-parser": "^1.17.2",
-    "cookie-parser": "~1.4.3",
-    "debug": "^2.6.8",
-    "express": "^4.15.3",
-    "express-session": "^1.15.3",
-    "session-file-store": "^1.0.0",
-    "morgan": "^1.8.1",
-    "mysql": "^2.12.0",
-    "serve-favicon": "^2.4.3",
-    "pug": "^2.0.0-rc.1"
-  }
+    "jquery": "^3.1.1"
+  },
+  "devDependencies": {
+    "browser-sync": "^2.18.7",
+    "colors": "^1.1.2",
+    "font-awesome": "^4.7.0",
+    "glob": "^7.1.1",
+    "gray-matter": "^2.1.0",
+    "gulp": "^3.9.1",
+    "gulp-autoprefixer": "^4.0.0",
+    "gulp-concat": "^2.6.1",
+    "gulp-data": "^1.2.1",
+    "gulp-fontmin": "^0.7.4",
+    "gulp-htmlmin": "^3.0.0",
+    "gulp-load-plugins": "^1.5.0",
+    "gulp-nunjucks": "^3.0.0",
+    "gulp-size": "^2.1.0",
+    "gulp-stylus": "^2.6.0",
+    "gulp-uglify": "^3.0.0",
+    "js-yaml": "^3.8.1",
+    "markdown-it": "^8.3.0",
+    "markdown-it-attrs": "^0.8.0",
+    "nib": "^1.1.2",
+    "path": "^0.12.7",
+    "rimraf": "^2.6.1"
+  },
+  "author": "JaxsonWang",
+  "license": "MIT"
 }

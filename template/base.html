@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>{{ name }}的个人简历</title>
+  <meta name="description" content="{{ meta_content }}">
+  <meta name="keywords" content="{{ keywords }}">
+  <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,minimum-scale=1">
+  <link rel="stylesheet" type="text/css" href="assets/materialize/css/materialize.min.css" />
+  <link rel="stylesheet" type="text/css" href="assets/fonts/css/font-awesome.min.css" />
+  <link rel="stylesheet" type="text/css" href="assets/styles.css" />
+</head>
+<body class="{% block body_class %}{% endblock %} blue-grey lighten-5">
+  <div class="site">
+    {% block main %}{% endblock %}
+  </div>
+<!--<footer>-->
+    <!--<p>Theme by <a {% if website %}href="{{ website }}"{% else %}-->
+        <!--{% if github %}href="{{ github }}"{% endif %}{% endif %} target="_blank">{{ nickname }}</a>. Made with <i class="fa fa-heart throb" style="color: #d43f57;"></i> by <a href="https://github.com/xiao555/Resume-it" target="_blank">Resume-it</a>. 最后更新于{{ update_time }} <a href="./print.html">打印版</a></p>-->
+<!--</footer>-->
+<script type="text/javascript" src="assets/materialize/js/materialize.min.js"></script>
+<script type="text/javascript" src="assets/jquery.min.js"></script>
+<script type="text/javascript" src="assets/main.min.js"></script>
+</body>
+</html>

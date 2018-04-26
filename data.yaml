@@ -1,0 +1,70 @@
+---
+update_time: '2017.08.06'
+name: 王瑾
+career: 全栈工程师
+meta_content:
+keywords:
+my_motto: 永远年轻，永远热泪盈眶
+apply_to_position: Web前端工程师
+about: 听说你很皮啊听说你很皮啊听说你很皮啊听说你很皮啊听说你很皮啊听说你很皮啊听说你很皮啊听说你很皮啊听说你很皮啊听说你很皮啊听说你很皮啊听说你很皮啊听说你很皮啊听说你很皮啊听说你很皮啊听说你很皮啊
+phone_num: 17601573648
+email: wangjin@boxrom.com
+blog: https://iiong.com
+notice: Hello World
+skills: # 技能展示
+    -
+      name: Nodejs
+      value: 10%
+    -
+      name: Web前端
+      value: 100%
+    -
+      name: PHP
+      value: 25%
+
+work_experience:
+    -
+      name: 腾讯
+      start: 2017.04
+      end: 2018.04
+      functions: 前端工程师
+      des: !!md |
+        啊1212
+    -
+      name: 腾讯
+      start: 2017.04
+      end: 2018.04
+      functions: 前端工程师
+      des: !!md |
+        sadasasd
+        **aaa**
+
+project_experience:
+    -
+      name: 腾讯111
+      start: 2017.04
+      end: 2018.04
+      des: !!md |
+        啊1212
+    -
+      name: 腾讯222
+      start: 2017.04
+      end: 2018.04
+      des: !!md |
+        sadasasd321313131313133133
+        **aaa**
+
+skill_certificates: !!md |
+  - wo
+  - aa
+  - aa
+
+skill_software: !!md |
+  - wo
+  - aa
+  - aa
+
+self_evaluation: !!md |
+  - woaaaaa
+  - aaaaaaaaaaaaaaa
+  - aaaaaaaa

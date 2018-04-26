@@ -1,0 +1,352 @@
+body
+  overflow-x hidden
+
+.light-text
+  color #bfc3f2
+
+.contrast-bg
+  background-color #04c754 !important
+
+.light-bg
+  background-color #bfc3f2 !important
+
+.primary-color
+  background #1A237E
+
+.primary-dark
+  background black
+
+.primary-nav
+  background #04c754
+
+.primary-nav:hover, .btn-large:hover
+  background #04c754
+  color white
+
+.primary-nav i, .btn-large i
+  color white
+
+.primary-nav:hover i, .btn-large:hover i
+  color contrast-color(#e5dc81)
+
+.floating-download
+  background-color red
+  &:hover
+    background-color #04c754
+
+*
+  box-sizing border-box
+
+html, body
+  height 100%
+  font-size 100%
+
+#side-nav
+  height 2650px
+  margin-bottom 0
+  padding 0
+
+main .row, footer.page-footer
+  margin 0
+
+footer
+  &.page-footer
+    background-color black
+
+a
+  color #1A237E
+
+.portrait
+  margin-top 0
+
+.card.portrait,
+.main-nav-wrapper > .collapsible,
+#side-nav .card-panel,
+#side-nav .card.portrait,
+.facts-wrapper > .collapsible
+  -webkit-box-shadow none
+  -moz-box-shadow none
+  box-shadow none
+  border-radius none
+  background-color transparent
+
+.portrait-wrapper
+  position absolute
+  bottom 7px
+  left 0
+  padding 20px
+  display block
+  width 100%
+  color #fff
+  background linear-gradient(to bottom, transparent, rgba(0, 0, 0, 0.6))
+
+h5
+  &.side
+    font-size 110%
+
+p
+  &.side
+    a
+      color #bfc3f2
+
+.facts-wrapper
+  margin-top 0
+  &:last-child
+    position relative
+    margin-bottom 50px
+    bottom 0
+  .facts-content-col
+    padding-right 0
+    ul
+      li
+        i
+          position relative
+          right 5px
+        a
+          color #fff
+    h5
+      i
+        font-size 26px
+        position relative
+        right 10px
+  p
+    margin-top -10px
+    margin-bottom -10px
+    padding-top 16px
+    font-size 100%
+    border-bottom 1px solid rgba(0, 0, 0, 0.1)
+    font-weight 300
+    line-height 180%
+    width 100%
+  .facts-about
+    padding-right 30px
+  span
+    display block
+    line-height 160%
+
+.fact-icon
+  padding-right 0
+
+.facts-skills-wrapper
+  width 85%
+  li
+    -ms-filter "progid:DXImageTransform@mixin Microsoft@mixin Alpha(Opacity=${iefactor})"
+    filter "alpha(opacity=(${iefactor}))"
+    -moz-opacity 0
+    -khtml-opacity 0
+    opacity 0
+
+.col
+  &.s9
+    &.facts-content-col
+      padding-left 0
+
+.facts-content-lg
+  font-size 120%
+  font-weight 400
+
+.facts-content-sm
+  font-size 90%
+  padding-bottom 10px
+
+.progress-label
+  font-size 80%
+
+.progress-icon
+  height 0px
+  display block
+  position relative
+  z-index 1
+  font-size 0.75rem
+
+.progress-fg, .progress-bg
+  height 2px
+
+.progress-bg
+  background black
+
+#main-panel
+  .card-panel
+    margin 30px
+    color #333
+    p
+      color #888
+      font-weight 300
+    h4
+      font-weight 500
+      font-size 160%
+    h5
+      &.role
+        font-size 100%
+        color #7f88e5
+        text-transform uppercase
+        margin 2rem 0 0 0
+    h6
+      font-size 80%
+      color #888
+      text-transform uppercase
+    hr
+      border 0px
+      height 2px
+      background-color #eee
+      margin 30px -32px 30px 0
+
+.facts-interests
+  p
+    i
+      color #1A237E
+      margin 0 30px
+
+.contact-footer
+  margin-top 20px
+  a
+    line-height 400%
+    margin 10px
+    &:first-of-type
+      margin-right 20px
+
+blockquote
+  margin 20px 0
+  padding-left 0.75rem
+  border-left 3px solid #aab0ed
+
+.work-company
+  font-weight 500
+  color #666666
+
+.built-with
+  a
+    margin 0
+    &:first-of-type
+      margin-right 0px
+  span
+    &.title
+      font-size 1em
+  img
+    width 12%
+    margin 0
+
+.job-highlight
+  font-size 90%
+
+.timeline-graph
+  width 100%
+  margin 30px 0
+
+#forkongithub
+  position absolute
+  display block
+  top -30px
+  right 0
+  width 260px
+  overflow hidden
+  height 260px
+  z-index 9999
+  a
+    background #1A237E
+    color #fff
+    text-decoration none
+    text-align center
+    padding 5px 40px
+    font-size .825rem
+    line-height 2rem
+    position relative
+    transition 0.5s
+    width 230px
+    position absolute
+    top 60px
+    right -60px
+    transform rotate(45deg)
+    -webkit-transform rotate(45deg)
+    -ms-transform rotate(45deg)
+    -moz-transform rotate(45deg)
+    -o-transform rotate(45deg)
+    box-shadow 4px 4px 10px rgba(0, 0, 0, 0.25)
+    &:hover
+      background #04c754
+      color #fff
+    &::after
+      bottom 1px
+      top auto
+
+#forkongithub a::before, #forkongithub a::after
+  content ""
+  width 100%
+  display block
+  position absolute
+  top 1px
+  left 0
+  height 1px
+  background #fff
+
+.floating-badge
+  position absolute
+  margin-left -50px
+  top 3px
+  right 50px
+  color white
+  font-size .625em
+  background rgba(0, 0, 0, 0.75)
+  padding 0 10px 3px 3px
+  line-height 1em
+
+@media (max-width: 600px)
+  #side-nav
+    height auto
+
+  div
+    &.contact-footer
+      a
+        margin 0 20px
+
+  .contact-footer
+    a
+      &:first-of-type
+        display block
+        width 100%
+        margin-left 0
+
+  .built-with
+    img
+      margin 0px
+      width 24%
+
+  #main-panel
+    .card-panel
+      margin 10px 0px 30px
+      color #333
+
+@media (min-width: 600px) and (max-width: 991px)
+  #side-nav
+    height 3217.5px
+
+  h4
+    font-size 1.5rem
+
+  h6
+    font-size 0.825rem
+    line-height 0
+
+  .built-with
+    img
+      width 24%
+
+  .contact-footer
+    a
+      &:first-of-type
+        display block
+        width 100%
+        margin-left 0
+
+  #main-panel
+    .card-panel
+      h4
+        font-size 3.5vw
+        line-height 4.5vw
+      h5
+        font-size 2.5vw
+        line-height 3.5vw
+      h6
+        font-size 2vw
+        line-height 2.5vw
+
