@@ -6,17 +6,28 @@
   <meta name="description" content="{{ meta_content }}">
   <meta name="keywords" content="{{ keywords }}">
   <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,minimum-scale=1">
-  <link rel="stylesheet" type="text/css" href="assets/materialize/css/materialize.min.css" />
-  <link rel="stylesheet" type="text/css" href="assets/fonts/css/font-awesome.min.css" />
+  {% if cdn %}
+  <link href="https://cdn.bootcss.com/materialize/1.0.0-beta/css/materialize.min.css" type="text/css" rel="stylesheet" />
+  <link href="https://cdn.bootcss.com/font-awesome/4.7.0/css/font-awesome.min.css" type="text/css" rel="stylesheet">
+  {% else %}
+  <link href="assets/materialize/css/materialize.min.css" type="text/css" rel="stylesheet" />
+  <link href="assets/fonts/css/font-awesome.min.css" type="text/css" rel="stylesheet" />
+  {% endif %}
   <link rel="stylesheet" type="text/css" href="assets/styles.css" />
 </head>
 <body class="{% block body_class %}{% endblock %} blue-grey lighten-5">
   <div class="site">
     {% block main %}{% endblock %}
   </div>
-<footer class="page-footer center-align"><span>本页面使用Gulp构建 - Crafted with <a href="https://iiong.com" rel="nofollow" target="_blank">淮城一只猫</a></span></footer>
-<script type="text/javascript" src="assets/materialize/js/materialize.min.js"></script>
-<script type="text/javascript" src="assets/jquery.min.js"></script>
-<script type="text/javascript" src="assets/main.min.js"></script>
+  {% include 'tools.html' %}
+  <footer class="page-footer center-align"><span>本页面使用Gulp构建 - Crafted with <a href="https://iiong.com" rel="nofollow" target="_blank">淮城一只猫</a></span></footer>
+  {% if cdn %}
+  <script type="text/javascript" src="https://cdn.bootcss.com/jquery/3.3.1/jquery.min.js"></script>
+  <script type="text/javascript" src="https://cdn.bootcss.com/materialize/1.0.0-beta/js/materialize.min.js"></script>
+  {% else %}
+  <script type="text/javascript" src="assets/jquery.min.js"></script>
+  <script type="text/javascript" src="assets/materialize/js/materialize.min.js"></script>
+  {% endif %}
+  <script type="text/javascript" src="assets/main.min.js"></script>
 </body>
 </html>

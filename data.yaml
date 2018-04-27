@@ -11,7 +11,9 @@ about: !!md |
 phone_num: 001-205-202-1206
 email: wangjin@boxrom.com
 blog: https://iiong.com
+download:
 notice:
+cdn: 1
 skills: # 技能展示
     -
       name: Web前端开发
