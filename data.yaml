@@ -1,70 +1,125 @@
 ---
-update_time: '2017.08.06'
+update_time: '2018.04.27'
 name: 王瑾
 career: 全栈工程师
-meta_content:
-keywords:
+meta_content: 王瑾的个人简历
+keywords: 王瑾,简历
 my_motto: 永远年轻，永远热泪盈眶
-apply_to_position: Web前端工程师
-about: 听说你很皮啊听说你很皮啊听说你很皮啊听说你很皮啊听说你很皮啊听说你很皮啊听说你很皮啊听说你很皮啊听说你很皮啊听说你很皮啊听说你很皮啊听说你很皮啊听说你很皮啊听说你很皮啊听说你很皮啊听说你很皮啊
-phone_num: 17601573648
+about: !!md |
+  你好，我叫王瑾，英文名是Jaxson Wang。
+  欢迎查看我的简历！
+phone_num: 001-205-202-1206
 email: wangjin@boxrom.com
 blog: https://iiong.com
-notice: Hello World
+notice:
 skills: # 技能展示
     -
-      name: Nodejs
-      value: 10%
+      name: Web前端开发
+      value: 85%
     -
-      name: Web前端
-      value: 100%
+      name: Node.js开发
+      value: 80%
     -
-      name: PHP
-      value: 25%
+      name: Linux运维
+      value: 75%
+    -
+      name: PHP开发
+      value: 70%
+    -
+      name: Java开发
+      value: 60%
 
 work_experience:
     -
-      name: 腾讯
-      start: 2017.04
+      name: 江苏立扬传媒有限公司
+      start: 2017.11
       end: 2018.04
-      functions: 前端工程师
+      functions: 全栈工程师
       des: !!md |
-        啊1212
+        1. 配合美工完成静态页面开发；
+        1. 完成微信交互网站/微信小程序开发；
+        1. 一些网站的前后端分离开发；
     -
-      name: 腾讯
-      start: 2017.04
-      end: 2018.04
-      functions: 前端工程师
+      name: 江苏楚淮软件开发有限公司
+      start: 2017.03
+      end: 2017.10
+      functions: Web前端工程师
       des: !!md |
-        sadasasd
-        **aaa**
+        1. 配合美工完成静态页面开发；
+        1. 配合Java后台完成接口调试；
+        1. 使用HTML5完成WebApp开发；
+    -
+      name: 江苏新航网络科技有限公司
+      start: 2017.03
+      end: 2017.10
+      functions: Web前端工程师
+      des: !!md |
+        1. 配合美工完成静态页面开发；
+        1. 配合Java后台完成接口调试；
+        1. 使用HTML5完成WebApp开发；
 
 project_experience:
     -
-      name: 腾讯111
-      start: 2017.04
-      end: 2018.04
+      name: 年会抽奖系统
+      start: 2018.01
+      end: 2018.02
       des: !!md |
-        啊1212
+        结合微信公众号开发一个Node.js开发的抽奖将系统。
+        1. 使用Node.js Express Web框架编写；
+        1. 结合微信公众号开发；
     -
-      name: 腾讯222
-      start: 2017.04
-      end: 2018.04
+      name: 淮安食药监App
+      start: 2017.03
+      end: 2017.10
       des: !!md |
-        sadasasd321313131313133133
-        **aaa**
+        使用MUI框加编写，MUI负责App布局构架，使用Vue.js管理数据逻辑。
+        1. 使用MUI框架；
+        1. 使用Vue.js来管理数据状态；
+        1. 使用Webview调用真机环境函数；
+        1. 后期逻辑代码优化；
+    -
+      name: 南京畅游App
+      start: 2016.03
+      end: 2016.12
+      des: !!md |
+        使用React Native构建iOS和Android版本的App开发。
+        [Android App下载](http://imtt.dd.qq.com/16891/DCC9B3AC550C23821D4869E189767CE5.apk?fsname=com.cyty.wechat_1.9_9.apk&csr=a10c)
+        [iOS App下载](https://itunes.apple.com/cn/app/%E7%95%85%E6%B8%B8%E4%BD%93%E8%82%B2/id1135402858?mt=8)
+        1. 该项目使用Node.js环境构建，后台数据使用Java和前端Redux技术；
+        1. 负责编写ReactJS静态页面，以及微信App页面构建；
+        1. 负责编写JavaScript页面动画，兼容Android、iOS Webkit内核；
+        1. 负责编写和后台数据交互接口；
+        1. 负责编写ReactJS逻辑算法，例如加密，验证等；
+        1. 负责编写ReactJS DOM文档状态单元类后期针对客户端进行优化；
 
 skill_certificates: !!md |
-  - wo
-  - aa
-  - aa
+  - 计算机ACCP APTECH证书；
+  - 全国计算机信息高新技术考试合格证书；
 
 skill_software: !!md |
-  - wo
-  - aa
-  - aa
+ - 熟练HTML,CSS、JavaScript等前端Web开发；
+ - 熟练Node.JS构建开发;
+ - 熟练Node.JS Express Koa等模块扩展开发；
+ - 熟练AngularJS、ReactJS、Vue.js开发；
+ - 熟练掌握JAVA面向对象编程语言，有良好的编码习惯；
+ - 熟练使用JSP、Servlet、JavaBean进行web应用开发；
+ - 熟练掌握Struts2、Hibernate、Spring等开源框架技术进行大型项目开发；
+ - 熟练操作MySQL数据库,了解Oracle数据库，熟悉SQL语句；
+ - 熟悉Mongo NoSQL数据库；
+ - 熟练运用Eclipse、MyEclipse、idea等开发工具；
+ - 熟悉Linux服务器，熟练掌握Tomcat、Apache、Nginx、MySQL等服务器配置和使用；
 
 self_evaluation: !!md |
-  - woaaaaa
-  - aaaaaaaaaaaaaaa
-  - aaaaaaaa
+ - 本人熟练JAVA开发，做过JAVA项目。
+ - 熟悉PHP脚本语言，做过简易MySQL+PHP博客，知识笔记系统等项目；
+ - 2014年左右，参加三个月的OPPO公司组织Andriod系统开源项目指导活动，
+ - 为OPPO旗下和第三方Andriod手机适配系统，以及针对Andriod系统安全漏洞进行修复等知识讲解；
+ - 曾多次根据设计图需求做出静态页面显示，兼容IE8 - IE11、Firfox、Chrome浏览器；
+ - 曾经编写Node.JS构建完整的博客系统；
+ - 个人编写多款WordPress、Typecho等博客前端主题；
+ - 个人博客：https://iiong.com，欢迎访问；
+ - Github：https://github.com/JaxsonWang
+ - 非常热爱互联网行业，时刻关注行业动态；
+ - 学习能力强，喜欢对新事物进行折腾研究；
+ - 对待事物态度认真负责，不完成目标决不放弃；
+ - 充满热情，助人为乐，具有团队合作精神；

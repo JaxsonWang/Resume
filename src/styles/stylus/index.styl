@@ -2,7 +2,7 @@ body
   overflow-x hidden
 
 .light-text
-  color #bfc3f2
+  color #fce4ec
 
 .contrast-bg
   background-color #04c754 !important
@@ -11,7 +11,7 @@ body
   background-color #bfc3f2 !important
 
 .primary-color
-  background #1A237E
+  background #880e4f
 
 .primary-dark
   background black
@@ -42,7 +42,7 @@ html, body
   font-size 100%
 
 #side-nav
-  height 2650px
+  height auto
   margin-bottom 0
   padding 0
 
@@ -51,10 +51,16 @@ main .row, footer.page-footer
 
 footer
   &.page-footer
-    background-color black
+    background-color #880e4f
+    padding 5px 0
+    font-size 12px
+    color #b3e5fc
+    a
+      color inherit
+      text-decoration underline
 
 a
-  color #1A237E
+  color #e91e63
 
 .portrait
   margin-top 0
@@ -153,7 +159,7 @@ p
   font-size 80%
 
 .progress-icon
-  height 0px
+  height 0
   display block
   position relative
   z-index 1
@@ -172,24 +178,35 @@ p
     p
       color #888
       font-weight 300
+      padding-left 10px
     h4
       font-weight 500
       font-size 160%
     h5
       &.role
         font-size 100%
-        color #7f88e5
+        color #f06292
         text-transform uppercase
         margin 2rem 0 0 0
+        display flex
+        flex-wrap wrap
+        width 100%
+        span
+          width 33.333333%
     h6
       font-size 80%
       color #888
       text-transform uppercase
     hr
-      border 0px
+      border 0
       height 2px
       background-color #eee
       margin 30px -32px 30px 0
+    ol
+      padding-left 20px
+    ul
+      padding-left 20px
+
 
 .facts-interests
   p
@@ -212,13 +229,13 @@ blockquote
 
 .work-company
   font-weight 500
-  color #666666
+  color #666
 
 .built-with
   a
     margin 0
     &:first-of-type
-      margin-right 0px
+      margin-right 0
   span
     &.title
       font-size 1em
@@ -233,52 +250,6 @@ blockquote
   width 100%
   margin 30px 0
 
-#forkongithub
-  position absolute
-  display block
-  top -30px
-  right 0
-  width 260px
-  overflow hidden
-  height 260px
-  z-index 9999
-  a
-    background #1A237E
-    color #fff
-    text-decoration none
-    text-align center
-    padding 5px 40px
-    font-size .825rem
-    line-height 2rem
-    position relative
-    transition 0.5s
-    width 230px
-    position absolute
-    top 60px
-    right -60px
-    transform rotate(45deg)
-    -webkit-transform rotate(45deg)
-    -ms-transform rotate(45deg)
-    -moz-transform rotate(45deg)
-    -o-transform rotate(45deg)
-    box-shadow 4px 4px 10px rgba(0, 0, 0, 0.25)
-    &:hover
-      background #04c754
-      color #fff
-    &::after
-      bottom 1px
-      top auto
-
-#forkongithub a::before, #forkongithub a::after
-  content ""
-  width 100%
-  display block
-  position absolute
-  top 1px
-  left 0
-  height 1px
-  background #fff
-
 .floating-badge
   position absolute
   margin-left -50px
@@ -289,6 +260,10 @@ blockquote
   background rgba(0, 0, 0, 0.75)
   padding 0 10px 3px 3px
   line-height 1em
+
+.update
+  color #f8bbd0
+  font-size 14px
 
 @media (max-width: 600px)
   #side-nav
@@ -308,12 +283,12 @@ blockquote
 
   .built-with
     img
-      margin 0px
+      margin 0
       width 24%
 
   #main-panel
     .card-panel
-      margin 10px 0px 30px
+      margin 10px 0 30px
       color #333
 
 @media (min-width: 600px) and (max-width: 991px)
@@ -349,4 +324,3 @@ blockquote
       h6
         font-size 2vw
         line-height 2.5vw
-

@@ -1,0 +1,54 @@
+<div id="side-nav" class="col s12 m5 l4 primary-color">
+    <div class="card portrait">
+        <div class="card-image">
+            <img src="assets/images/header.jpg">
+            <div class="portrait-wrapper">
+                <h4>{{ name }}</h4>
+                <h6>{{ career }}</h6>
+            </div>
+        </div>
+        <div class="facts-wrapper light-text">
+            <div class="row">
+                <div class="col s1 right-align fact-icon"></div>
+                <div class="col s11 facts-content-col">
+                    <h5 class="side facts-content-title"><i class="fa fa-user fa-fw"></i>关于</h5>
+                    <p class="facts-about">{{about |safe}}</p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col s1 right-align fact-icon"></div>
+                <div class="col s11 facts-content-col">
+                    <h5 class="side facts-content-title"><i class="fa fa-phone-square fa-fw"></i>联系</h5>
+                    <ul class="side">
+                        {% if phone_num %}
+                        <li><i class="fa fa-phone fa-fw"></i><a href="tel:{{phone_num}}" target="_blank">{{phone_num}}</a></li>
+                        {% endif %}
+                        {% if email %}
+                        <li><i class="fa fa-envelope-o fa-fw"></i><a href="mailto:{{email}}" target="_blank">{{email}}</a></li>
+                        {% endif %}
+                        {% if blog %}
+                        <li><i class="fa fa-home fa-fw"></i><a href="{{blog}}" rel="nofollow" target="_blank">个人博客</a></li>
+                        {% endif %}
+                    </ul>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col s1 right-align fact-icon"></div>
+                <div class="col s11 facts-content-col">
+                    <h5 class="side"><i class="fa fa-institution fa-fw"></i>技能</h5>
+                    <ul class="facts-skills-wrapper">
+                        {% for item in skills %}
+                        <li class="skill-item" style="transform: translateX(0px); opacity: 1;">
+                            <span class="progress-label">{{item.name}}</span>
+                            <i style="left: calc({{item.value}} - 2px);" class="progress-icon mdi-image-lens"></i>
+                            <div class="progress-bg progress">
+                                <div style="width: {{item.value}}" class="progress-fg determinate light-bg"></div>
+                            </div>
+                        </li>
+                        {% endfor %}
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

@@ -3,63 +3,7 @@
 <div class="container">
     <!-- Page Layout here -->
     <div class="row">
-
-        <div id="side-nav" class="col s12 m5 l4 primary-color">
-            <div class="card portrait">
-                <div class="card-image">
-                    <img src="assets/images/header.jpg">
-                    <div class="portrait-wrapper">
-                        <h4>{{ name }}</h4>
-                        <h6>{{ career }}</h6>
-                    </div>
-                </div>
-                <div class="facts-wrapper light-text">
-                    <div class="row">
-                        <div class="col s1 right-align fact-icon"></div>
-                        <div class="col s11 facts-content-col">
-                            <h5 class="side facts-content-title"><i class="fa fa-user fa-fw"></i>关于</h5>
-                            <p class="facts-about">{{about}}</p>
-                        </div>
-                    </div>
-                    <div class="row">
-                            <div class="col s1 right-align fact-icon"></div>
-                        <div class="col s11 facts-content-col">
-                            <h5 class="side facts-content-title"><i class="fa fa-phone-square fa-fw"></i>联系</h5>
-                            <ul class="side">
-                                {% if phone_num %}
-                                <li><i class="fa fa-phone fa-fw"></i><a href="tel:{{phone_num}}" target="_blank">{{phone_num}}</a></li>
-                                {% endif %}
-                                {% if email %}
-                                <li><i class="fa fa-envelope-o fa-fw"></i><a href="mailto:{{email}}" target="_blank">{{email}}</a></li>
-                                {% endif %}
-                                {% if blog %}
-                                <li><i class="fa fa-home fa-fw"></i><a href="{{blog}}" rel="nofollow" target="_blank">个人博客</a></li>
-                                {% endif %}
-                            </ul>
-                        </div>
-                    </div>
-                    <div class="row">
-                        <div class="col s1 right-align fact-icon"></div>
-                        <div class="col s11 facts-content-col">
-                            <h5 class="side"><i class="fa fa-institution fa-fw"></i>技能</h5>
-                            <ul class="facts-skills-wrapper">
-                                {% for item in skills %}
-                                <li class="skill-item" style="transform: translateX(0px); opacity: 1;">
-                                    <span class="progress-label">{{item.name}}</span>
-                                    <i style="left: calc({{item.value}} - 2px);" class="progress-icon mdi-image-lens"></i>
-                                    <div class="progress-bg progress">
-                                        <div style="width: {{item.value}}" class="progress-fg determinate light-bg"></div>
-                                    </div>
-                                </li>
-                                {% endfor %}
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-        </div><!--end 侧边栏-->
-
+        {% include 'sidebar.html' %}<!--end 侧边栏-->
         <div id="main-panel" class="col s12 m7 l8">
             {% if notice %}
             <div class="card-panel">
@@ -71,14 +15,16 @@
                 </div>
             </div>
             {% endif %}
-
-
             <div class="card-panel">
                 <div class="row">
                     <div class="col s12 facts-content-col job">
                         <h4>工作经验</h4>
                         {% for item in work_experience %}
-                        <h5 class="role">{{item.start}} - {{item.end}} {{item.name}} {{item.functions}}</h5>
+                        <h5 class="role">
+                            <span class="center-align">{{item.start}} - {{item.end}}</span>
+                            <span class="center-align">{{item.name}}</span>
+                            <span class="center-align">{{item.functions}}</span>
+                        </h5>
                         <p>{{item.des |safe}}</p>
                         {% endfor %}
                     </div>
@@ -89,7 +35,10 @@
                     <div class="col s12 facts-content-col timeline">
                         <h4>项目经验</h4>
                         {% for item in project_experience %}
-                        <h5 class="role">{{item.start}} - {{item.end}} {{item.name}}</h5>
+                        <h5 class="role">
+                            <span class="center-align">{{item.start}} - {{item.end}}</span>
+                            <span class="center-align">{{item.name}}</span>
+                        </h5>
                         <p>{{item.des |safe}}</p>
                         {% endfor %}
                     </div>
@@ -132,12 +81,15 @@
                 <div class="row">
                     <div class="col s12 facts-content-col">
                         <div class="contact-footer center-align">
-                            <a href="https://iiong.com" target="_blank">iiong.com</a><br>
+                            <a href="https://iiong.com" target="_blank">淮城一只猫</a><br>
                             <a href="https://weibo.com/JaxsonWang" rel="nofollow" target="_blank"><i class="fa fa-weibo fa-lg"></i></a>
                             <a href="https://twitter.com/@JaxsonWang" rel="nofollow" target="_blank"><i class="fa fa-twitter fa-lg"></i></a>
                             <a href="https://github.com/JaxsonWang" rel="nofollow" target="_blank"><i class="fa fa-github fa-lg"></i></a>
                         </div>
                     </div>
+                </div>
+                <div class="update right-align">
+                    <span>本简历信息更新于：{{update_time}}</span>
                 </div>
             </div>
         </div><!--end 页面内容-->
