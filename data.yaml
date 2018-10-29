@@ -33,27 +33,18 @@ skills: # 技能展示
 
 work_experience:
     -
-      name: 江苏立扬传媒有限公司
-      start: 2017.11
-      end: 2018.04
-      functions: 全栈工程师
-      des: !!md |
-        1. 配合美工完成静态页面开发；
-        1. 完成微信交互网站/微信小程序开发；
-        1. 一些网站的前后端分离开发；
-    -
-      name: 江苏楚淮软件开发有限公司
-      start: 2017.03
-      end: 2017.10
+      name: 江苏楚淮科技软件有限公司
+      start: 2016.10
+      end: 2018.03
       functions: Web前端工程师
       des: !!md |
         1. 配合美工完成静态页面开发；
         1. 配合Java后台完成接口调试；
         1. 使用HTML5完成WebApp开发；
     -
-      name: 江苏新航网络科技有限公司
-      start: 2017.03
-      end: 2017.10
+      name: 南京市畅游体育
+      start: 2016.03
+      end: 2016.09
       functions: Web前端工程师
       des: !!md |
         1. 配合美工完成静态页面开发；
@@ -61,6 +52,27 @@ work_experience:
         1. 使用HTML5完成WebApp开发；
 
 project_experience:
+    -
+      name: 劲牛店管家农资营销管理系统
+      start: 2018.09
+      end: 2018.11
+      des: !!md |
+        该系统包括红包创建，红包展示，企业认证等一系列功能。该项目用到Element-UI、Nuxt.js、Vue.js SSR、Scss、Pug等前端主流构建环境。
+        1. 使用Vue.js SSR进行页面构建；
+        2. 使用Nuxt.js完成界面展示；
+        3. 使用Vue Router完成页面路由；
+        4. 使用Vue Vuex状态树；
+        5. 使用Axios.js完成数据对接；
+    -
+      name: 海创智慧园区App
+      start: 2018.08
+      end: 2018.11
+      des: !!md |
+        智慧园区方便园区管理，保护房租出租信息展示，会议室预定功能，意见反馈、物业报修等诸多功能。
+        1. 使用MUI高性能移动端框架编写UI界面；
+        2. 使用Vue.js负责数据渲染；
+        3. 使用Axios.js负责接口获取数据；
+        4. 完成App权限验证，接口错误捕获功能；
     -
       name: 年会抽奖系统
       start: 2018.01
