@@ -1,5 +1,5 @@
 ---
-update_time: '2018.04.27'
+update_time: '2018.10.31'
 name: 王瑾
 career: 全栈工程师
 meta_content: 王瑾的个人简历
@@ -34,8 +34,8 @@ skills: # 技能展示
 work_experience:
     -
       name: 江苏楚淮科技软件有限公司
-      start: 2016.10
-      end: 2018.03
+      start: "2016.10"
+      end: "2018.03"
       functions: Web前端工程师
       des: !!md |
         1. 配合美工完成静态页面开发；
@@ -43,8 +43,8 @@ work_experience:
         1. 使用HTML5完成WebApp开发；
     -
       name: 南京市畅游体育
-      start: 2016.03
-      end: 2016.09
+      start: "2016.03"
+      end: "2016.09"
       functions: Web前端工程师
       des: !!md |
         1. 配合美工完成静态页面开发；
@@ -54,8 +54,8 @@ work_experience:
 project_experience:
     -
       name: 劲牛店管家农资营销管理系统
-      start: 2018.09
-      end: 2018.11
+      start: "2018.09"
+      end: "2018.11"
       des: !!md |
         该系统包括红包创建，红包展示，企业认证等一系列功能。该项目用到Element-UI、Nuxt.js、Vue.js SSR、Scss、Pug等前端主流构建环境。
         1. 使用Vue.js SSR进行页面构建；
@@ -65,8 +65,8 @@ project_experience:
         5. 使用Axios.js完成数据对接；
     -
       name: 海创智慧园区App
-      start: 2018.08
-      end: 2018.11
+      start: "2018.08"
+      end: "2018.11"
       des: !!md |
         智慧园区方便园区管理，保护房租出租信息展示，会议室预定功能，意见反馈、物业报修等诸多功能。
         1. 使用MUI高性能移动端框架编写UI界面；
@@ -75,16 +75,16 @@ project_experience:
         4. 完成App权限验证，接口错误捕获功能；
     -
       name: 年会抽奖系统
-      start: 2018.01
-      end: 2018.02
+      start: "2018.01"
+      end: "2018.02"
       des: !!md |
         结合微信公众号开发一个Node.js开发的抽奖将系统。
         1. 使用Node.js Express Web框架编写；
         1. 结合微信公众号开发；
     -
       name: 淮安食药监App
-      start: 2017.03
-      end: 2017.10
+      start: "2017.03"
+      end: "2017.10"
       des: !!md |
         使用MUI框加编写，MUI负责App布局构架，使用Vue.js管理数据逻辑。
         1. 使用MUI框架；
@@ -93,8 +93,8 @@ project_experience:
         1. 后期逻辑代码优化；
     -
       name: 南京畅游App
-      start: 2016.03
-      end: 2016.12
+      start: "2016.03"
+      end: "2016.12"
       des: !!md |
         使用React Native构建iOS和Android版本的App开发。
         [Android App下载](http://imtt.dd.qq.com/16891/DCC9B3AC550C23821D4869E189767CE5.apk?fsname=com.cyty.wechat_1.9_9.apk&csr=a10c)
