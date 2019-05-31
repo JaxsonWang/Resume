@@ -1,7 +1,7 @@
 ---
-update_time: '2018.10.31'
+update_time: '2019.05.31'
 name: 王瑾
-career: 全栈工程师
+career: 前端工程师
 meta_content: 王瑾的个人简历
 keywords: 王瑾,简历
 my_motto: 永远年轻，永远热泪盈眶
@@ -9,7 +9,7 @@ about: !!md |
   你好，我叫王瑾，英文名是Jaxson Wang。
   欢迎查看我的简历！
 phone_num: 001-205-202-1206
-email: wangjin@boxrom.com
+email: i@iiong.com
 blog: https://iiong.com
 download:
 notice:
@@ -26,16 +26,16 @@ skills: # 技能展示
       value: 75%
     -
       name: PHP开发
-      value: 70%
+      value: 60%
     -
       name: Java开发
-      value: 60%
+      value: 50%
 
 work_experience:
     -
       name: 江苏楚淮科技软件有限公司
       start: "2016.10"
-      end: "2018.03"
+      end: "2019.05"
       functions: Web前端工程师
       des: !!md |
         1. 配合美工完成静态页面开发；
@@ -53,16 +53,27 @@ work_experience:
 
 project_experience:
     -
-      name: 劲牛店管家农资营销管理系统
-      start: "2018.09"
-      end: "2018.11"
+      name: 尔听美直播系统
+      start: "2019.03"
+      end: "2019.05"
       des: !!md |
-        该系统包括红包创建，红包展示，企业认证等一系列功能。该项目用到Element-UI、Nuxt.js、Vue.js SSR、Scss、Pug等前端主流构建环境。
-        1. 使用Vue.js SSR进行页面构建；
+        该系统包括红包创建，红包展示，企业认证等一系列功能。该项目用到Element-UI、Nuxt.js、Vue.js SPA、Scss、Pug等前端主流构建环境。
+        1. 使用Vue.js SPA进行页面构建；
         2. 使用Nuxt.js完成界面展示；
         3. 使用Vue Router完成页面路由；
         4. 使用Vue Vuex状态树；
         5. 使用Axios.js完成数据对接；
+    -
+      name: 国家税务局运维云管理平台
+      start: "2018.12"
+      end: "2019.03"
+      des: !!md |
+        该系统包括设备信息查询，人员管理，任务派发等。该项目用到Element-UI、Vue.js SSR、Webpack等前端主流构建环境。
+        1. 使用Vue.js SPA进行页面构建；
+        2. 使用Vue Router完成页面路由；
+        3. 使用Vue Vuex状态树；
+        4. 使用Axios.js完成数据对接；
+        5. 展示地址：http://ifullstacker.com/room/ 账号：hn_admin 密码：联系我
     -
       name: 海创智慧园区App
       start: "2018.08"
@@ -107,28 +118,18 @@ project_experience:
         1. 负责编写ReactJS DOM文档状态单元类后期针对客户端进行优化；
 
 skill_certificates: !!md |
-  - 计算机ACCP APTECH证书；
   - 全国计算机信息高新技术考试合格证书；
 
 skill_software: !!md |
- - 熟练HTML,CSS、JavaScript等前端Web开发；
- - 熟练Node.JS构建开发;
- - 熟练Node.JS Express Koa等模块扩展开发；
- - 熟练AngularJS、ReactJS、Vue.js开发；
- - 熟练掌握JAVA面向对象编程语言，有良好的编码习惯；
- - 熟练使用JSP、Servlet、JavaBean进行web应用开发；
- - 熟练掌握Struts2、Hibernate、Spring等开源框架技术进行大型项目开发；
- - 熟练操作MySQL数据库,了解Oracle数据库，熟悉SQL语句；
- - 熟悉Mongo NoSQL数据库；
- - 熟练运用Eclipse、MyEclipse、idea等开发工具；
- - 熟悉Linux服务器，熟练掌握Tomcat、Apache、Nginx、MySQL等服务器配置和使用；
+ - 熟练HTML,CSS、JavaScript等前端开发；
+ - 熟练React.js、Vue.js + WebPack、Gulp工具前端构建开发；
+ - 熟练Mui真机移动端开发;
+ - 熟悉Node.js Express Koa等服务端模块扩展开发；
+ - 熟悉Linux服务器，熟练掌握Apache、Nginx、MySQL、Redis等服务器配置和使用；
 
 self_evaluation: !!md |
- - 本人熟练JAVA开发，做过JAVA项目。
+ - 本人熟练Java开发，做过简单的Java项目。
  - 熟悉PHP脚本语言，做过简易MySQL+PHP博客，知识笔记系统等项目；
- - 2014年左右，参加三个月的OPPO公司组织Andriod系统开源项目指导活动，
- - 为OPPO旗下和第三方Andriod手机适配系统，以及针对Andriod系统安全漏洞进行修复等知识讲解；
- - 曾多次根据设计图需求做出静态页面显示，兼容IE8 - IE11、Firfox、Chrome浏览器；
  - 曾经编写Node.JS构建完整的博客系统；
  - 个人编写多款WordPress、Typecho等博客前端主题；
  - 个人博客：https://iiong.com，欢迎访问；
